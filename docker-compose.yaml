@@ -1,0 +1,38 @@
+services:
+  mongo_db:
+    image: mongo:6.0
+    container_name: mongo_db
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - private
+
+  back_end:
+    depends_on:
+      - mongo_db
+    build:
+      context: ./projet-de-synthese-back-end
+    container_name: back_end
+    restart: always
+    ports:
+      - "8000:8000"
+    networks:
+      - private
+      - public
+    volumes:
+      - ./projet-de-synthese-back-end:/usr/src/app
+      - /usr/src/app/node_modules
+
+volumes:
+  mongo-data:
+
+networks:
+  private:
+  public:
+
