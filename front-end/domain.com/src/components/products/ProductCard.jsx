@@ -35,17 +35,21 @@ const ProductCard = ({
   const userCurrency = useSelector((state) => state.auth.currency);
   const productRef = useRef();
   const [visible, setVisible] = useState(false);
+  const [priceChanging, setPriceChanging] = useState(false);
   const [convertedPrice, setConvertedPrice] = useState(0.0);
 
   useEffect(() => {
-    getPrice(
-      {
-        from: currency,
-        to: userCurrency || localStorage.getItem("currency") || currency,
-        value: price,
-      },
-      setConvertedPrice
-    );
+    setPriceChanging(true);
+    getPrice({
+      from: currency,
+      to: userCurrency || localStorage.getItem("currency") || currency,
+      value: price,
+    })
+      .then((data) => {
+        setConvertedPrice(data);
+      })
+      .catch((err) => console.log({ err }))
+      .finally(() => setPriceChanging(false));
 
     if (isElementVisible(productRef.current)) {
       setVisible(true);
@@ -70,6 +74,7 @@ const ProductCard = ({
       window.removeEventListener("scroll", handleScroll);
     };
   }, [_id, visible]);
+  console.log({ price });
 
   return (
     <Link ref={productRef} to={`/product/${_id}`}>
@@ -89,10 +94,16 @@ const ProductCard = ({
           <h2 title={title}>{title?.substring(0, titleLong || 150)}...</h2>
           <div>
             <h3>
-              {getSymbolFromCurrency(
-                userCurrency || localStorage.getItem("currency") || currency
+              {priceChanging ? (
+                "Loading..."
+              ) : (
+                <>
+                  {getSymbolFromCurrency(
+                    userCurrency || localStorage.getItem("currency") || currency
+                  )}
+                  {convertedPrice?.toFixed(2)}
+                </>
               )}
-              {convertedPrice?.toFixed(2)}
             </h3>
             <h3>New</h3>
           </div>
@@ -103,3 +114,4 @@ const ProductCard = ({
 };
 
 export default ProductCard;
+

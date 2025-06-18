@@ -21,6 +21,7 @@ import Loader from "./components/Loader";
 import CheckOut from "./pages/checkout";
 
 const App = () => {
+  console.log("env", import.meta.env);
   const { loading } = useSelector((state) => state.auth);
 
   if (loading) {

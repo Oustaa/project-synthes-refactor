@@ -1,0 +1,132 @@
+[
+  {
+    "_id": "64526532d9ed0e00d6daa6ce",
+    "name": "GlassOuse",
+    "bg_image": "",
+    "avatar": "",
+    "bio": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.",
+    "address": "AV BAB GHMATE NR 37 SYBA MARRAKECH",
+    "currency": "USD",
+    "email": "otailaba98@gmail.com",
+    "email_verified": false,
+    "password": "$2b$10$uHzqyAJ8M1zzMeYR0DSd1.6oTivaonG/BbAcbYXlvS/8pmZ5qx/2G",
+    "phone_number": "0641679994",
+    "phone_verified": false,
+    "followers": [],
+    "visits": { "$numberInt": "5" },
+    "updated_at": { "$date": { "$numberLong": "1684063246220" } },
+    "deleted_at": null,
+    "created_at": { "$date": { "$numberLong": "1683121458654" } },
+    "__v": { "$numberInt": "0" },
+    "location": { "lat": "33.57", "long": "-7.59" },
+    "questions": [
+      {
+        "product_id": "645f68a2b7c9d7aeba02917e",
+        "text": "How can I use this keyboard?",
+        "user": "647d14df45e8ef28e14b5274",
+        "_id": "64d526064716ac7022ad68ea"
+      }
+    ],
+    "updatedAt": { "$date": { "$numberLong": "1712682317758" } },
+    "orders": [
+      { "items": [], "_id": "647ced968a48602884ad70ea" },
+      { "items": [], "_id": "647ced978a48602884ad70ed" },
+      { "items": [], "_id": "647cf72c800e9b674bc37ea4" },
+      { "items": [], "_id": "647cf72f800e9b674bc37ea7" }
+    ]
+  },
+  {
+    "_id": "646224ee9eac75a615ef36ea",
+    "name": "Hasbro Gaming",
+    "bg_image": "",
+    "avatar": "",
+    "bio": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.",
+    "address": "AV BAB GHMATE NR 37 SYBA MARRAKECH",
+    "currency": "USD",
+    "email": "HasbroGaming@gmail.com",
+    "email_verified": false,
+    "password": "$2b$10$/g4Xm.FhMjwq2o01tyhNHeOwb4mlG8/aBblz0Q6J/BHCSQ6nVl/cu",
+    "phone_number": "0641679994",
+    "phone_verified": false,
+    "followers": [],
+    "visits": { "$numberInt": "6" },
+    "views": { "$numberInt": "0" },
+    "updated_at": { "$date": { "$numberLong": "1685117070883" } },
+    "deleted_at": null,
+    "questions": [],
+    "created_at": { "$date": { "$numberLong": "1684153582717" } },
+    "__v": { "$numberInt": "0" },
+    "location": { "lat": "31.62", "long": "-7.97" },
+    "orders": [{ "items": [], "_id": "647cf731800e9b674bc37eaa" }],
+    "updatedAt": { "$date": { "$numberLong": "1712695534559" } }
+  },
+  {
+    "_id": "6469152eac637f0aadf91b42",
+    "name": "FNJO Store",
+    "bg_image": "",
+    "avatar": "",
+    "bio": "",
+    "address": "AV BAB GHMATE NR 37 SYBA MARRAKECH",
+    "currency": "USD",
+    "email": "FNJOStore@gmail.com",
+    "email_verified": false,
+    "password": "$2b$10$8gkd7zsBeUgJNOeLcLHrpO4U5xHhEPRqS7UxKWbHWUr8V6BL3CmO6",
+    "phone_number": "0641679943",
+    "phone_verified": false,
+    "followers": [],
+    "visits": [{ "$numberInt": "0" }],
+    "views": [{ "$numberInt": "0" }],
+    "updated_at": null,
+    "deleted_at": null,
+    "questions": [
+      {
+        "product_id": "646a311f11d4019feb856dd4",
+        "text": "is this a game proper for a 3 years old boy",
+        "user": "647d14df45e8ef28e14b5274",
+        "_id": "655113aa25442cb657714624"
+      }
+    ],
+    "created_at": { "$date": { "$numberLong": "1684608302574" } },
+    "__v": { "$numberInt": "0" },
+    "location": { "lat": "31.51", "long": "-9.76" },
+    "orders": [],
+    "updatedAt": { "$date": { "$numberLong": "1699812266315" } }
+  },
+  {
+    "_id": "646be003f196f615449c2074",
+    "name": "AMEGAT",
+    "bg_image": "",
+    "avatar": "",
+    "bio": "",
+    "address": "",
+    "currency": "USD",
+    "email": "AMEGAT@gmail.com",
+    "email_verified": false,
+    "password": "$2b$10$y8Lwr80YL.URRqzzpsqFPueWVYdHFmLWT98Pi7t7zdwGr0ZX9NQXu",
+    "phone_number": "0641679934",
+    "phone_verified": false,
+    "followers": [],
+    "views": [{ "$numberInt": "0" }],
+    "updated_at": null,
+    "deleted_at": null,
+    "questions": [
+      {
+        "product_id": "6470d4cfa13a8cbb5bfaf325",
+        "text": "Is this the final one, and how many Hz on it please?",
+        "user": "646faeacef5e619091b4534a",
+        "_id": "6477a47af67f36636a181abd"
+      },
+      {
+        "product_id": "646be472683bf7b1986c71ec",
+        "text": "is this product compatible with apple's products",
+        "user": "647d14df45e8ef28e14b5274",
+        "_id": "64c78223855362f21b9b92ed"
+      }
+    ],
+    "created_at": { "$date": { "$numberLong": "1684791299930" } },
+    "__v": { "$numberInt": "0" },
+    "visits": { "$numberInt": "27" },
+    "updatedAt": { "$date": { "$numberLong": "1750263542157" } }
+  }
+]
+

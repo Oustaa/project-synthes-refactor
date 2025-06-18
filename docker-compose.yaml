@@ -7,7 +7,7 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: example
     volumes:
-      - mongo-data:/data/db
+      - ./volumes/mongo-data:/data/db
     ports:
       - "27017:27017"
     networks:
@@ -17,7 +17,7 @@ services:
     depends_on:
       - mongo_db
     build:
-      context: ./projet-de-synthese-back-end
+      context: ./back-end
     container_name: back_end
     restart: always
     ports:
@@ -26,7 +26,22 @@ services:
       - private
       - public
     volumes:
-      - ./projet-de-synthese-back-end:/usr/src/app
+      - ./back-end:/usr/src/app
+      - /usr/src/app/node_modules
+
+  domain.com:
+    depends_on:
+      - back_end
+    build:
+      context: ./front-end/domain.com
+    container_name: domain.com
+    restart: always
+    ports:
+      - "5173:5173"
+    networks:
+      - public
+    volumes:
+      - ./front-end/domain.com:/usr/src/app
       - /usr/src/app/node_modules
 
 volumes:
@@ -35,4 +50,3 @@ volumes:
 networks:
   private:
   public:
-

@@ -18,7 +18,7 @@ const app = express();
 
 app.use((req, res, next) => {
   console.log(
-    `URL: ${req.url}, Method: ${req.method}, process ID: ${process.pid}`
+    `URL: ${req.url}, Method: ${req.method}, process ID: ${process.pid}`,
   );
   next();
 });
@@ -27,13 +27,14 @@ app.use(
   cors({
     origin: "*",
     optionsSuccessStatus: 200,
-  })
+    credentials: true,
+  }),
 );
 
 app.use(
   helmet({
     crossOriginResourcePolicy: true,
-  })
+  }),
 );
 
 app.use(cookieParser());
