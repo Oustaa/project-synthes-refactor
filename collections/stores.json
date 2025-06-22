@@ -13,12 +13,11 @@
     "phone_number": "0641679994",
     "phone_verified": false,
     "followers": [],
-    "visits": { "$numberInt": "5" },
-    "updated_at": { "$date": { "$numberLong": "1684063246220" } },
+    "visits": 5,
+    "updated_at": 1684063246220,
     "deleted_at": null,
-    "created_at": { "$date": { "$numberLong": "1683121458654" } },
-    "__v": { "$numberInt": "0" },
-    "location": { "lat": "33.57", "long": "-7.59" },
+    "created_at": 1683121458654,
+    "location": { "lat": 33.57, "long": -7.59 },
     "questions": [
       {
         "product_id": "645f68a2b7c9d7aeba02917e",
@@ -27,7 +26,7 @@
         "_id": "64d526064716ac7022ad68ea"
       }
     ],
-    "updatedAt": { "$date": { "$numberLong": "1712682317758" } },
+    "updatedAt": 1712682317758,
     "orders": [
       { "items": [], "_id": "647ced968a48602884ad70ea" },
       { "items": [], "_id": "647ced978a48602884ad70ed" },
@@ -49,16 +48,15 @@
     "phone_number": "0641679994",
     "phone_verified": false,
     "followers": [],
-    "visits": { "$numberInt": "6" },
-    "views": { "$numberInt": "0" },
-    "updated_at": { "$date": { "$numberLong": "1685117070883" } },
+    "visits": 6,
+    "views": 0,
+    "updated_at": 1685117070883,
     "deleted_at": null,
     "questions": [],
-    "created_at": { "$date": { "$numberLong": "1684153582717" } },
-    "__v": { "$numberInt": "0" },
-    "location": { "lat": "31.62", "long": "-7.97" },
+    "created_at": 1684153582717,
+    "location": { "lat": 31.62, "long": -7.97 },
     "orders": [{ "items": [], "_id": "647cf731800e9b674bc37eaa" }],
-    "updatedAt": { "$date": { "$numberLong": "1712695534559" } }
+    "updatedAt": 1712695534559
   },
   {
     "_id": "6469152eac637f0aadf91b42",
@@ -74,8 +72,8 @@
     "phone_number": "0641679943",
     "phone_verified": false,
     "followers": [],
-    "visits": [{ "$numberInt": "0" }],
-    "views": [{ "$numberInt": "0" }],
+    "visits": ["0"],
+    "views": ["0"],
     "updated_at": null,
     "deleted_at": null,
     "questions": [
@@ -86,11 +84,10 @@
         "_id": "655113aa25442cb657714624"
       }
     ],
-    "created_at": { "$date": { "$numberLong": "1684608302574" } },
-    "__v": { "$numberInt": "0" },
+    "created_at": "1684608302574",
     "location": { "lat": "31.51", "long": "-9.76" },
     "orders": [],
-    "updatedAt": { "$date": { "$numberLong": "1699812266315" } }
+    "updatedAt": "1699812266315"
   },
   {
     "_id": "646be003f196f615449c2074",
@@ -106,7 +103,7 @@
     "phone_number": "0641679934",
     "phone_verified": false,
     "followers": [],
-    "views": [{ "$numberInt": "0" }],
+    "views": 0,
     "updated_at": null,
     "deleted_at": null,
     "questions": [
@@ -123,10 +120,9 @@
         "_id": "64c78223855362f21b9b92ed"
       }
     ],
-    "created_at": { "$date": { "$numberLong": "1684791299930" } },
-    "__v": { "$numberInt": "0" },
-    "visits": { "$numberInt": "27" },
-    "updatedAt": { "$date": { "$numberLong": "1750263542157" } }
+    "created_at": "1684791299930",
+    "visits": 27,
+    "updatedAt": "1750263542157"
   }
 ]
 

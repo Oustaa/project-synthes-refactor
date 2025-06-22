@@ -58,7 +58,7 @@ async function getStoreById(req, res) {
         currency: 1,
         followers: 1,
       },
-      { new: true }
+      { new: true },
     );
 
     if (!store)
@@ -140,7 +140,7 @@ async function createStore(req, res, next) {
 
     const token = jwt.sign(
       { id: store._id, name: store.name, type: "store" },
-      ACCESS_TOKEN_SECRET
+      ACCESS_TOKEN_SECRET,
     );
 
     res.cookie("token", token, {
@@ -158,7 +158,7 @@ async function createStore(req, res, next) {
 async function getStoreByFilters(req, res) {
   const { filter, limit } = req.body;
 
-  const storeCount = await StoreModule.find(filter, {}).count();
+  const storeCount = await StoreModule.countDocuments(filter);
 
   if (storeCount === limit) {
     return res.status(409).json({ conflect: true });
@@ -183,7 +183,7 @@ async function putStore(req, res) {
 
   const updatedStore = await StoreModule.updateOne(
     { _id: id },
-    { ...updateInfo, updated_at: new Date() }
+    { ...updateInfo, updated_at: new Date() },
   );
   // renameFolder(req.store.name, updateInfo.name);
 
@@ -224,7 +224,7 @@ async function postAnswer(req, res) {
         $push: {
           QandA: { question: QandA.question, answer: QandA.answer },
         },
-      }
+      },
     );
 
     if (acknowledged && modifiedCount) {
@@ -234,7 +234,7 @@ async function postAnswer(req, res) {
           $pull: {
             questions: { _id: { $in: [qestionId] } },
           },
-        }
+        },
       );
 
       return res.json(deleteQuestion);

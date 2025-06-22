@@ -74,10 +74,10 @@ const Header = () => {
           ))}
         </StyledLinks>
         <StyledLinks>
-          <Link target="_blank" to="http://localhost:3001/login">
+          <Link target="_blank" to={import.meta.env.VITE_STORE_URL}>
             Create Store
           </Link>
-          <Link target="_blank" to="http://localhost:3001/">
+          <Link target="_blank" to={`${import.meta.env.VITE_STORE_URL}/login`}>
             Your Store
           </Link>
         </StyledLinks>
