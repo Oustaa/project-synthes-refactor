@@ -1,4 +1,3 @@
-import React from "react";
 import Question from "./Question";
 import styled from "styled-components";
 import Alert from "../../Alert";
@@ -10,13 +9,15 @@ const StyledQueastionsContainer = styled.div``;
 const QueastionsContainer = ({ questions }) => {
   const [question, setQuestion] = useState(null);
 
+  console.log({ questions });
+
   return (
     <>
       <Alert>
         <AnswerForm {...question} />
       </Alert>
       <StyledQueastionsContainer>
-        {questions.length
+        {questions
           ? questions.map((question) => (
               <Question
                 key={question._id}
@@ -31,3 +32,4 @@ const QueastionsContainer = ({ questions }) => {
 };
 
 export default QueastionsContainer;
+

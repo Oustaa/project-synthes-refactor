@@ -54,9 +54,9 @@ const storeSlice = createSlice({
   initialState: {
     loading: false,
     store: {},
-    orders: [],
-    products: [],
-    categories: [],
+    orders: null,
+    products: null,
+    categories: null,
   },
   reducers: {
     updateStore: (state, { payload }) => {

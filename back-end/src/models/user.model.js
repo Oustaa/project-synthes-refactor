@@ -1,4 +1,4 @@
-const { Schema, model, Types } = require("mongoose");
+const { Schema, model } = require("mongoose");
 
 const userSchema = Schema(
   {
@@ -23,7 +23,7 @@ const userSchema = Schema(
     visits: { type: [String], default: [] },
     search: { type: [String], default: [] },
   },
-  { timestamps: true }
+  { timestamps: true },
 );
 
 module.exports = model("User", userSchema);

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -48,8 +47,8 @@ const Info = () => {
   const { orders } = useSelector((state) => state.store);
 
   useEffect(() => {
-    if (orders.length === 0) dispatch(getOrders());
-    if (products.length === 0) dispatch(getProducts());
+    if (orders === null) dispatch(getOrders());
+    if (products === null) dispatch(getProducts());
   }, []);
 
   return (
@@ -80,3 +79,4 @@ const Info = () => {
 };
 
 export default Info;
+

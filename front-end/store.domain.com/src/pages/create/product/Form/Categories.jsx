@@ -47,7 +47,7 @@ const Categories = ({ changeHandler }) => {
   const [options, setOptions] = useState([]);
 
   useEffect(() => {
-    if (categories.length === 0) dispatch(getCategories());
+    if (categories === null) dispatch(getCategories());
     setOptionsHandler(categories, setOptions);
   }, []);
 

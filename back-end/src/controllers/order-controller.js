@@ -16,7 +16,7 @@ async function postOrder(req, res) {
     for (const element of order.items) {
       await ProductModel.updateOne(
         { _id: element.product, store_id: element.store },
-        { $inc: { stock_Quantity: -element.qte } }
+        { $inc: { stock_Quantity: -element.qte } },
       );
     }
 
@@ -33,7 +33,7 @@ async function getOrdersByStore(req, res) {
     const orders = await OrderModel.aggregate([
       {
         $match: {
-          "items.store": new Types.ObjectId(storeId),
+          "items.store": storeId,
         },
       },
       {
@@ -41,7 +41,7 @@ async function getOrdersByStore(req, res) {
       },
       {
         $match: {
-          "items.store": new Types.ObjectId(storeId),
+          "items.store": storeId,
         },
       },
       {
@@ -69,7 +69,7 @@ async function getOrdersByUser(req, res) {
       { user_id: userId },
       {
         __v: 0,
-      }
+      },
     );
 
     res.json(orders);

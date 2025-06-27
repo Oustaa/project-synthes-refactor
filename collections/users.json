@@ -87,8 +87,7 @@
     "test fdf1",
     "test fdf2"
   ],
-  "createdAt": { "$date": { "$numberLong": "1685918943919" } },
-  "updatedAt": { "$date": { "$numberLong": "1750263179913" } },
-  "__v": { "$numberInt": "0" }
+  "createdAt": "1685918943919",
+  "updatedAt": "1750263179913"
 }
 

@@ -25,11 +25,11 @@ async function createUser(req, res) {
 
   try {
     const password = await bcrypt.hash(userInfo.password, 10);
-    const createdUser = await UserModel.create({ ...userInfo, password });
+    const createdUser = await serModel.create({ ...userInfo, password });
 
     await CartModel.create({ user: createdUser._id });
 
-    const token = await jwt.sign(
+    const token = jwt.sign(
       { _id: createdUser._id, username: createdUser.username, type: "user" },
       process.env.ACCESS_TOKEN_SECRET,
       { expiresIn: "12h" }
@@ -149,3 +149,4 @@ module.exports = {
   postSearch,
   postWishList,
 };
+

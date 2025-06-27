@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../../../features/auth-slice";
 import styled from "styled-components";
@@ -62,10 +62,10 @@ const CreateStore = () => {
   const [storeData, setStoreData] = useState({
     name: "",
     email: "",
-    email_verified: false,
+    email_verified: true,
     password: "",
     phone_number: "",
-    phone_verified: false,
+    phone_verified: true,
   });
   const [step, setStep] = useState(0);
   const [canContinue, setCanContinue] = useState(false);
@@ -100,10 +100,6 @@ const CreateStore = () => {
     setStoreData((prev) => {
       return { ...prev, [name]: e.target.value };
     });
-  };
-
-  const nextStep = (can, cb) => {
-    setCanContinue(can);
   };
 
   const imageChnageHandler = (e) => {

@@ -38,7 +38,7 @@ function codeVerification(
   code,
   secretXKey,
   errorHandler,
-  successHandler
+  successHandler,
 ) {
   const options = {
     method: "GET",
@@ -75,18 +75,19 @@ const StorePhone = ({ setCanContinue, data, changeHandler }) => {
     changeHandler(e);
     const regexPhoneNumber = /^((\+)33|0)[1-9](\d{2}){4}$/;
 
-    if (e.target.value.match(regexPhoneNumber)) {
-      setCanContinue(true);
-    } else {
-      setCanContinue(false);
-    }
+    // if (e.target.value.match(regexPhoneNumber)) {
+    //   setCanContinue(true);
+    // } else {
+    //   setCanContinue(false);
+    // }
     setPhone(e.target.value);
+    setCanContinue(true);
   };
 
   useEffect(() => {
-    const secretXKey = process.env.REACT_APP_RAPID_API_X_KEY;
+    const secretXKey = import.meta.env.VITE_RAPID_API_X_KEY;
     if (data.phone_number) setPhone(data.phone_number);
-    sendMSG("0641679994", secretXKey);
+    // sendMSG("", secretXKey);
   }, []);
 
   return (

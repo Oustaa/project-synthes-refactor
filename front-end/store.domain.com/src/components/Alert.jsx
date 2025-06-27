@@ -1,4 +1,3 @@
-import React from "react";
 import { StyledAlert } from "../styles";
 import { useSelector, useDispatch } from "react-redux";
 import { createPortal } from "react-dom";
@@ -11,6 +10,7 @@ const Alert = ({ children }) => {
   const closeAlertHandler = () => {
     dispatch(closeAlert());
   };
+
   if (alertOpen)
     return (
       <>
@@ -26,3 +26,4 @@ const Alert = ({ children }) => {
 };
 
 export default Alert;
+

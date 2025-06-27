@@ -3,6 +3,7 @@ const StoreModule = require("../models/store.model");
 
 const serverErrorHandler = require("../middlewares/error_handler");
 const mongoose = require("mongoose");
+const { ObjectId } = require("mongodb");
 
 // projection for getting multiple products
 const projection = {
@@ -26,7 +27,7 @@ async function getProductsByStoreId(req, res) {
 
   try {
     const products = await ProductsModel.aggregate([
-      { $match: { store_id: new mongoose.Types.ObjectId(storeID) } },
+      { $match: { store_id: storeID } },
       {
         $lookup: {
           from: "stores",
@@ -44,8 +45,11 @@ async function getProductsByStoreId(req, res) {
       },
     ]);
 
+    console.log({ products });
+
     return res.status(200).json(products);
   } catch (error) {
+    console.log({ error });
     serverErrorHandler(res, error);
   }
 }
@@ -226,7 +230,7 @@ async function getProductById(req, res) {
     const product = await ProductsModel.findOneAndUpdate(
       { _id: productID },
       { $inc: { visits: 1 } },
-      { _v: 0 }
+      { _v: 0 },
     )
       .populate({
         path: "store_id",
@@ -343,7 +347,7 @@ async function createProduct(req, res) {
       stock_Quantity: JSON.parse(productsInfo.stock_Quantity),
       about: productsInfo.about ? JSON.parse(productsInfo.about) : [],
       categories_id: new Array(
-        ...new Set(JSON.parse(productsInfo.categories_id))
+        ...new Set(JSON.parse(productsInfo.categories_id)),
       ),
       subcategories_id: JSON.parse(productsInfo.subcategories_id),
       images,
@@ -404,7 +408,7 @@ async function postQuestion(req, res) {
             user: req.user.id,
           },
         },
-      }
+      },
     );
 
     return res.json(updateCount);
@@ -451,7 +455,7 @@ async function productViewed(req, res) {
   try {
     const updated = await ProductsModel.updateOne(
       { _id: id },
-      { $inc: { views: 1 } }
+      { $inc: { views: 1 } },
     );
 
     res.json(updated);

@@ -1,8 +1,7 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import Loader from "../components/Loader";
 import { getOrders } from "../features/store-slice";
-import { BsDashLg } from "react-icons/bs";
 import Order from "../components/Order";
 import Table from "../components/table/Table";
 import styled from "styled-components";
@@ -55,10 +54,8 @@ const Orders = () => {
   const dispatch = useDispatch();
   const { orders, loading } = useSelector((state) => state.store);
 
-  console.log(orders);
-
   useEffect(() => {
-    if (!orders.length) dispatch(getOrders());
+    if (orders === null) dispatch(getOrders());
   }, [dispatch, orders.length]);
 
   if (loading) return <Loader />;
@@ -71,7 +68,7 @@ const Orders = () => {
       <Table
         emptyMessage="There is no product, try adding one now..."
         headers={tableHeaders}
-        data={orders}
+        data={orders || []}
         displayedComponentOnclick={(data) => <Order data={data} />}
       />
     </>
@@ -79,3 +76,4 @@ const Orders = () => {
 };
 
 export default Orders;
+

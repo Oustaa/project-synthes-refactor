@@ -42,20 +42,22 @@ const OverView = () => {
       <StyledOverView>
         <h3>
           Products Views
-          <span>{products.reduce((value, item) => value + item.views, 0)}</span>
+          <span>
+            {products?.reduce((value, item) => value + item.views, 0)}
+          </span>
         </h3>
       </StyledOverView>
       <StyledOverView>
         <h3>
           Products Visits
           <span>
-            {products.reduce((value, item) => value + item.visits, 0)}
+            {products?.reduce((value, item) => value + item.visits, 0)}
           </span>
         </h3>
       </StyledOverView>
       <StyledOverView>
         <h3>
-          Orders <span>{orders.length}</span>
+          Orders <span>{orders?.length}</span>
         </h3>
       </StyledOverView>
       <StyledOverView>
@@ -64,12 +66,12 @@ const OverView = () => {
           <span>
             $
             {orders
-              .reduce((value, order) => {
+              ?.reduce((value, order) => {
                 return (
                   value +
                   order.items.reduce(
                     (prev, item) => prev + item.price * item.qte,
-                    0
+                    0,
                   )
                 );
               }, 0)

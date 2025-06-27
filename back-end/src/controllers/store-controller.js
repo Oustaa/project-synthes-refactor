@@ -12,6 +12,8 @@ const ACCESS_TOKEN_SECRET = process.env.ACCESS_TOKEN_SECRET;
 async function getStore(req, res) {
   const id = req.store?.id;
 
+  console.log({ id });
+
   if (!id)
     return res
       .status(403)
@@ -72,7 +74,7 @@ async function getStoreById(req, res) {
   }
 }
 
-async function createStore(req, res, next) {
+async function createStore(req, res) {
   const storeInfo = req.body;
 
   // validate the store info before creating
@@ -119,9 +121,10 @@ async function createStore(req, res, next) {
     }
 
     // one phone number can belong to only two stores at most
-    const storePhoneCount = await StoreModule.find({
+    const storePhoneCount = await StoreModule.countDocuments({
       phone_number: storeInfo.phone_number,
-    }).count();
+    });
+
     if (storePhoneCount >= 2) {
       return res.status(409).json({
         phone_number: 2,
