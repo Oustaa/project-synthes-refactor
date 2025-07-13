@@ -1,0 +1,233 @@
+{
+  "collection": "products",
+  "data": [
+    {
+      "_id": "645e7b2675f4038525cab9eb",
+      "store_id": "64526532d9ed0e00d6daa6ce",
+      "title": "Amazon Basics Low-Profile Wired USB Keyboard with US Layout (QWERTY), Matte Black",
+      "price": 12.44,
+      "currency": "USD",
+      "images": [
+        "1683913510278.jpg",
+        "1683913510280.jpg",
+        "1683913510284.jpg",
+        "1683913510292.jpg",
+        "1683913510297.jpg"
+      ],
+      "specifications": [
+        { "name": "Brand", "value": "Basic" },
+        { "name": "Compatible Devices", "value": "PC" },
+        { "name": "Connectivity Technology", "value": "RF" },
+        { "name": "Keyboard Description", "value": "USB" },
+        { "name": "Recommended Uses For Product", "value": "Office" },
+        { "name": "Special Feature", "value": "Multimedia Keyboard" },
+        { "name": "Color", "value": "Black" },
+        { "name": "Operating System", "value": "Vista,Windows 2000" },
+        { "name": "Number of Keys", "value": "104" }
+      ],
+      "about": [
+        "Keyboard with low-profile keys for a comfortable, quiet typing experience",
+        "Includes a matte black keyboard with US layout (QWERTY) and a simple wired USB connection",
+        "Hotkeys enable easy access to Media, My Computer, Mute, Volume up/down, and Calculator",
+        "4 function keys control Previous Track, Stop, Play/Pause, and Next Track on a media player",
+        "Compatible with Windows 2000, XP, Vista, 7, 8, and 10",
+        "Ships in Certified Frustration-Free Packaging",
+        "Product dimensions: 17.4 x 5 x 1.1 inches (LxWxH)"
+      ],
+      "reviewsOverview": {
+        "one": 0,
+        "two": 0,
+        "three": 0,
+        "four": 0,
+        "five": 0
+      },
+      "description": "",
+      "extra_images": [],
+      "categories_id": ["64551d611e8c8ddc4b017a01"],
+      "subcategories_id": ["Computers and Accessories"],
+      "inserted_at": 1683912657202,
+      "available": true,
+      "stock_Quantity": 86,
+      "views": 188,
+      "visits": 4,
+      "QandA": [],
+      "reviews": [],
+      "__v": 0
+    },
+    {
+      "_id": "646245539eac75a615ef3704",
+      "store_id": "646224ee9eac75a615ef36ea",
+      "title": "VGMiu 60\" Trampoline for Kids, 5 FT Indoor & Outdoor Small Toddler Trampoline with Basketball Hoop, Safety Enclosure, Baby Trampoline Toys, Birthday Gifts for Kids, Gifts for Boy and Girl, Age 1-8",
+      "price": 189.99,
+      "currency": "USD",
+      "images": [
+        "1684161875034.jpg",
+        "1684161875037.jpg",
+        "1684161875043.jpg",
+        "1684161875047.jpg",
+        "1684161875058.jpg",
+        "1684161875061.jpg"
+      ],
+      "specifications": [
+        { "name": "Color", "value": "Yellow-BD" },
+        { "name": "Brand", "value": "VGMiu" },
+        { "name": "Material", "value": "Polypropylene" },
+        { "name": "Shape", "value": "Round" },
+        { "name": "Item Dimensions LxWxH", "value": "60\"L x 60\"W x 50.1\"H" },
+        { "name": "Frame Material", "value": "Alloy Steel" },
+        { "name": "Maximum Weight Recommendation", "value": "220 Pounds" }
+      ],
+      "about": [
+        "STURDY - Rust-proof steel structure with a total of 3 U-shape legs for added stability impressive bouncing. Each U-shape foot is setting with two large suction cups, which improves stability and will not damage the floor. It will not rattle or shake when the baby jumps. It is a very humanized design. It is very simple to move from indoor to outdoor. It only takes 10 minutes to remove the protective net and steel poles, and then you can easily pass through the door.",
+        "SAFETY - Wear-resistant, UV-resistant jump pad (made of PP) can withstand high pressure and has good elasticity. Double fun with jumping and shooting actions with the built-in entertainment basketball hoop, keep your kids go to jump frequently during a day. VGMiu kids trampolines comply with ASTM F381-16 Standard Safety Specification for Components, Assembly, Use, and Labeling of Consumer Trampolines.",
+        "HEAVY LOADING - This 60\" trampoline with safety enclosure for kids toddlers is safe and stable. The kids trampoline with protective net ensures your child's safety when jumping. Don't worry about getting hands or feet trapped in the gap, because they are covered by durable frame pads. (All VGMiu trampolines are fully tested for safety and durability)",
+        "APPLICATION - The newly upgraded trampoline in 2022 is the best gift for children. It is very suitable for toddler, children, baby, Your kids can have great fun and jumping exercise on VGMiu trampoline, a great way to burn off extra energy any time of the day. Can be installed indoors, outdoors, garden or backyard. Really a good gymnastics equipment for home.",
+        "PACKAGE CONTAINS - One trampoline, safety net, springs cover pad, jump pad, rust-proof steel pipe, pull tool (T-Hook), trampoline basketball hoop, 6pcs large suction cups, 10pcs pit ball, trampoline accessories and all the installation tools you need."
+      ],
+      "reviewsOverview": {
+        "one": 0,
+        "two": 0,
+        "three": 0,
+        "four": 0,
+        "five": 0
+      },
+      "description": "\"Why choose VGMiu Kid’s trampoline?\\nUndoubtedly, a trampoline is a very fun memory from childhood.\\n\\nVGMiu is a professional manufacturer of indoor & outdoor Kid’s trampolines with innovative safety design for jumping fun and stands out of the market with its outstanding product quality.\\n\\nLet them enjoy the vernal sunshine and fresh air instead of watching TV or playing computer game!\"",
+      "extra_images": [],
+      "categories_id": ["64551d611e8c8ddc4b017a00"],
+      "subcategories_id": ["Outdoor Play Equipment"],
+      "inserted_at": 1684153564116,
+      "available": true,
+      "stock_Quantity": 34,
+      "views": 28,
+      "visits": 25,
+      "QandA": [],
+      "reviews": [],
+      "__v": 0
+    },
+    {
+      "_id": "646930a9ef98aa26a0f031ec",
+      "store_id": "646224ee9eac75a615ef36ea",
+      "title": "Addshiny MOC Starship Walking Imperial Interior Walker Motorized UCS All-Terrain Panzer Transport Spaceship Model 21015 Building Kits,Star Plan UCS Collectible Set for Adults(6919 PCS)",
+      "price": 269.99,
+      "currency": "USD",
+      "images": [
+        "1684615337827.jpg",
+        "1684615337837.jpg",
+        "1684615337840.jpg",
+        "1684615337843.jpg",
+        "1684615337847.jpg",
+        "1684615337849.jpg"
+      ],
+      "specifications": [],
+      "about": [
+        "【 Explore 】This interactive starship, combining the enthusiasm of star fans and the expertise of builders, All-Terrain Panzer Transport will keep players engaged for hours, allowing them to relive classic films, explore science, and envision the future of humanity.",
+        "【Size】After installation, the size is 30*10*23 in.This set of 6919 pieces is made of durable ABS plastic and is easy to connect. It is sorted into categories and comes with a step-by-step guide for assembly. After installation, it is stable, reliable, beautiful and dreamy",
+        "【Large Proportion, Highly Restored】 All-terrain armored transport, mecha shape, sci-fi design, equipped with high-quality motors, realistic interior, restore the real control console, with a lot of independent innovative design details.",
+        "【 Package 】 The package includes 6919 blocks and an illustrated guide. The instructions are numbered and straightforward, allowing anyone to assemble and splice without prior knowledge. Building something can help develop practical skills, creativity, and a sense of adventure.",
+        "【 After sales 】Our building blocks have passed the intelligent machine detection and manual triple detection to ensure that the number of pieces is complete. If your suit is still missing, please contact us. We will send you the missing parts free of charge, thank you in advance."
+      ],
+      "reviewsOverview": {
+        "one": 0,
+        "two": 0,
+        "three": 0,
+        "four": 0,
+        "five": 0
+      },
+      "description": "",
+      "reviews": 0,
+      "extra_images": [],
+      "categories_id": ["64551d611e8c8ddc4b017a00"],
+      "subcategories_id": ["Building Sets and Blocks"],
+      "inserted_at": 1684607216991,
+      "available": true,
+      "stock_Quantity": 19,
+      "views": 53,
+      "visits": 8,
+      "QandA": [],
+      "__v": 0
+    },
+    {
+      "_id": "646a2d2a11d4019feb856d9c",
+      "store_id": "64526532d9ed0e00d6daa6ce",
+      "title": "PlayStation 5 Digital Edition",
+      "price": 559,
+      "currency": "USD",
+      "images": ["1684679978210.jpg", "1684679978213.jpg"],
+      "specifications": [],
+      "about": [
+        "Embark on an epic and heartfelt journey alongside Kratos and Atreus with the PlayStation 5 Console – God of War Ragnarök Bundle.",
+        "Bundle includes: PlayStation 5 console, DualSense Wireless Controller, Base, HDMI Cable, AC power cord, USB cable, God of War Ragnarok full game voucher",
+        "DualSense Wireless Controller integration: Feel your journey through the Norse realms, made possible by immersive haptic feedback and adaptive trigger functionality.",
+        "Stunning visuals: Bask in the beautiful worlds you travel through, brought to life by stunning art direction and arresting attention to detail. Behold enhanced reflections, lighting and shadows, as well as increased geometric detail and enhanced deformable snow.",
+        "Fully optimized for 3D Audio*: Immerse yourself in the unique soundscapes of the Nine Realms as sounds reverberate and echo throughout the environment. Use highly accurate spatial audio to hear enemies approaching from any direction, including above and below you. *3D audio with stereo headphones (analog or USB)"
+      ],
+      "reviewsOverview": {
+        "one": 0,
+        "two": 0,
+        "three": 0,
+        "four": 0,
+        "five": 0
+      },
+      "description": "",
+      "reviews": 0,
+      "extra_images": [],
+      "categories_id": ["64551d611e8c8ddc4b017a00"],
+      "subcategories_id": ["Video Games and Consoles"],
+      "inserted_at": 1684679571489,
+      "available": true,
+      "stock_Quantity": 8,
+      "views": 21,
+      "visits": 8,
+      "QandA": [],
+      "__v": 0
+    },
+    {
+      "_id": "646a31a011d4019feb856dd6",
+      "store_id": "6469152eac637f0aadf91b42",
+      "title": "Battleship With Planes Strategy Board Game For Ages 7 and Up (Amazon Exclusive)",
+      "price": 16.99,
+      "currency": "USD",
+      "images": ["1684681120635.jpg", "1684681120639.jpg", "1684681120641.jpg"],
+      "specifications": [
+        { "name": "Brand", "value": "Hasbro Gaming" },
+        { "name": "Material", "value": "Plastic" },
+        { "name": "Theme", "value": "Strategy" },
+        { "name": "Genre", "value": "Strategy" },
+        { "name": "Number of Players", "value": "2" }
+      ],
+      "about": [
+        "A twist on the classic battleship game: This battleship game features airplanes in addition to Ships for awesome strategic gameplay and epic battles",
+        "Sink Ships and crash Planes: with this edition, fans of the battleship game can crash enemy Planes in addition to sinking Ships to win",
+        "Portable Game: the battleship game includes 2 portable battle cases so players can take it with them, and Dive into an instant game on the go",
+        "A childhood favorite: remember playing the battleship game as a kid. Kids and adults can enjoy playing this entertaining game together. It's also a great strategy game. Play it in the classroom",
+        "Convenient storage: The game has convenient ship, plane, and peg storage on the side of the ocean grid"
+      ],
+      "reviewsOverview": {
+        "one": 0,
+        "two": 0,
+        "three": 0,
+        "four": 0,
+        "five": 0
+      },
+      "description": "",
+      "reviews": 0,
+      "extra_images": [],
+      "categories_id": ["64551d611e8c8ddc4b017a00"],
+      "subcategories_id": ["Board Games"],
+      "inserted_at": 1684679571489,
+      "available": true,
+      "stock_Quantity": 16,
+      "views": 40,
+      "visits": 7,
+      "QandA": [
+        {
+          "question": "klkd jl;fdgj lfdjg fsd?",
+          "answer": "sir fjalk",
+          "vote": 0,
+          "_id": "64f9a3137c485c9a75fb51db"
+        }
+      ],
+      "__v": 0
+    }
+  ]
+}

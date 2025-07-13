@@ -6,7 +6,7 @@ const ACCESS_TOKEN_SECRET = process.env.ACCESS_TOKEN_SECRET;
 
 async function login(req, res) {
   const { email, password } = req.body;
-  console.log(email, password);
+
   try {
     const store = await StoreModule.findOne({ email });
 
@@ -34,7 +34,7 @@ async function login(req, res) {
     const token = jwt.sign(
       { id: store._id, name: store.name, type: "store" },
       ACCESS_TOKEN_SECRET,
-      { expiresIn: "12h" }
+      { expiresIn: "12h" },
     );
 
     res.cookie("token", token, {
@@ -80,7 +80,7 @@ async function loginDemo(req, res) {
     const token = jwt.sign(
       { id: store._id, name: store.name, type: "store" },
       ACCESS_TOKEN_SECRET,
-      { expiresIn: "12h" }
+      { expiresIn: "12h" },
     );
 
     res.cookie("token", token, {
@@ -135,4 +135,3 @@ async function confirmPassword(req, res) {
 }
 
 module.exports = { login, isloggedin, confirmPassword, loginDemo };
-

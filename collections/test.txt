@@ -1,8 +1,0 @@
-[ product ]
-- title
-- price
-- images: string[]
-relationall database such mysql, sqlite
-[ product_iamges ]
-- product_id
-- url
